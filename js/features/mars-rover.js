@@ -1,7 +1,6 @@
 // js/features/mars-rover.js
 export default function () {
-
-  const API_KEY = "2arot5W2obucRAoyKxiAQW3NN2SPYVdpuaCNdKU6"; // ganti jika punya API Key pribadi
+  const API_KEY = "DEMO KEY"; // ganti jika punya API Key pribadi
 
   document.getElementById("content-area").innerHTML = `
     <h2 class="mb-4">Mars Rover Photos</h2>
@@ -44,7 +43,6 @@ export default function () {
   const cameraInput = document.getElementById("camera");
   const result = document.getElementById("result");
 
-
   const loadMarsPhotos = async () => {
     const rover = roverInput.value;
     const sol = solInput.value;
@@ -81,7 +79,6 @@ export default function () {
         `
         )
         .join("");
-
     } catch (err) {
       result.innerHTML = `
         <div class="alert alert-danger">Error: ${err.message}</div>
