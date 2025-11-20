@@ -1,6 +1,6 @@
 // js/features/mars-rover.js
 export default function () {
-  const API_KEY = "DEMO KEY"; // ganti jika punya API Key pribadi
+  const API_KEY = "DEMO KEY"; 
 
   document.getElementById("content-area").innerHTML = `
     <h2 class="mb-4">Mars Rover Photos</h2>
